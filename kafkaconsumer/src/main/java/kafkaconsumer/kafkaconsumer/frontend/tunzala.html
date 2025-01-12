@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client's Chat</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+<div class="chat-container">
+    <h1>client's Chat</h1>
+    <div class="messages-box" id="clientMessagesBox"></div>
+    <div class="input-container">
+        <input type="text" id="messageInput" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="getReply()">Get Reply</button>
+    </div>
+    <div id="clientReplyBox">
+        <p>Reply: <span id="clientReplyText">No reply yet</span></p>
+    </div>
+</div>
+
+<script src="client.js"></script>
+</body>
+</html>
+
